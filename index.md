@@ -1,7 +1,6 @@
 # Symfony Docker Skeleton
-1. Symfony
-2. Apache
-3. PHP 
-4. Postgres
+1. Apache 2.4
+2. PHP 7.4 
+4. Postgres 12.3
 
 // TODO
