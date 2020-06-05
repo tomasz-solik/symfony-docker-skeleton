@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+ apache:
+   build: .docker/apache
+   container_name: symfony_apache
+   volumes:
+     - .:/var/www/app
+   tty: true
+#   depends_on:
+#     - postgres
+   ports:
+     - 80:80
+##### FOR DB ON DOCKER #####
+# postgres:
+#   container_name: symfony_postgres
+#   image: postgres:12.3
+#   restart: always
+#   environment:
+#     POSTGRES_PASSWORD: postgres
+#     POSTGRES_USER: postgres
+#     POSTGRES_DB: symfony
+#   volumes:
+#     - .docker/data/pgdata:/var/lib/postgresql/data
+#   ports:
+#     - 5444:5432
